@@ -1,0 +1,199 @@
+---
+test-cases:
+  - summary: |
+    Проверка смены языка с английского на русский.
+  status: pass
+
+- summary: |
+    Проверка смены языка с русского на английский.
+  status: fail
+
+  - summary: |
+    Проверка сортировки товаров по категориям.
+  status: pass
+
+    - summary: |
+    Смена сортировки товаров по категориям.
+  status: pass
+
+    - summary: |
+    Проверка поиска товаров по названию.
+  status: pass
+
+    - summary: |
+    Проверка сброса поиска товаров по названию.
+  status: pass
+
+    - summary: |
+    Проверка поиска товаров по производителям.
+  status: pass
+
+    - summary: |
+    Проверка частичного сброса поиска товаров по производителям.
+  status: pass
+
+    - summary: |
+    Проверка поиска товаров не в наличии.
+  status: pass
+
+    - summary: |
+    Проверка поиска товаров по цене.
+  status: fail
+
+    - summary: |
+    Проверка сброса поиска товаров по цене.
+  status: pass
+
+    - summary: |
+    Проверка навигации по страницам товаров.
+  status: pass
+
+    - summary: |
+    Проверка работоспособности ссылок.
+  status: pass
+
+    - summary: |
+    Проверка добавления товаров в корзину.
+  status: pass
+
+      - summary: |
+    Проверка удаления товаров из корзины.
+  status: pass
+
+      - summary: |
+    Проверка оформления заказа.
+  status: pass
+
+      - summary: |
+    Проверка закрытия оформленного заказа
+  status: fail
+
+      - summary: |
+    Проверка очищения корзины.
+  status: pass
+
+      - summary: |
+    Проверка переходов по страницам "Магазин" и "Корзина".
+  status: pass
+
+bugreports:
+  - summary: |
+     Страница не полностью переводится на русский язык
+  environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Нажать "Язык", выбрать Русский
+  expected-result: |
+    Страница полностью переведена на русский язык.
+  actual-result: |
+    Содержимое вкладки "категория", а также описание товара остались на английском языке.
+
+  - summary: |
+     При отмене выбора "In stock" пропадает кнопка "Next"
+  environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Снять отметку "In stock"
+  expected-result: |
+    Все товары в наличии продолжат отображаться, к ним добавятся товары не в наличии.
+  actual-result: |
+    Все товары в наличии продолжат отображаться, однако отсутствует возможность перейти на страницу вперед.
+
+   - summary: |
+     При указывании верхней границы цены учитывается цена до скидки
+  environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. В поле "Price" - "To" ввести "500"
+  expected-result: |
+    Отобразятся товары с ценой до 500$, в том числе iPhone 9, цена которого на данный момент 477.85$.
+  actual-result: |
+    Отображаются товары, цена которых без скидки меньше 500$.
+
+    - summary: |
+     При совершении заказа корзина не очищается, количество товара на главной странице не меняется
+  environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. У товара "Handcraft Chinese style" нажать "Add to cart"
+    3. Нажать "Cart"
+    4. Нажать "Checkout"
+    5. Нажать "Close"
+    6. Нажать "Continue shopping"
+  expected-result: |
+    Количество товара "Handcraft Chinese style" должно измениться с 7 на 6, корзина после сообщения об успешном заказе должна очищаться.
+  actual-result: |
+    Появляется сообщение об успешном заказе, однако в DevTools ошибка в get запросе. Заказ не оформляется, количество товара не меняется.
+
+  - summary: |
+     При совершении заказа корзина не очищается, количество товара на главной странице не меняется
+  environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. У товара "Handcraft Chinese style" нажать "Add to cart"
+    3. Нажать "Cart"
+    4. Нажать "Checkout"
+    5. Нажать "Close"
+    6. Нажать "Continue shopping"
+  expected-result: |
+    Количество товара "Handcraft Chinese style" должно измениться с 7 на 6, корзина после сообщения об успешном заказе должна очищаться.
+  actual-result: |
+    Появляется сообщение об успешном заказе, однако в DevTools ошибка в get запросе. Заказ не оформляется, количество товара не меняется.
+
+- summary: |
+    Отсутствует возможность обратной связи
+   environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. У товара "iPhone 9" нажать "Add to cart"
+    3. Нажать "Cart"
+    4. Нажать "Checkout"
+  expected-result: |
+    Появится окно регистрации/поля ввода номера телефона/почты.
+  actual-result: |
+    Заказ закрывается без возможности со стороны покупателся оставить свои контактные данные.
+
+- summary: |
+    После отмены выбора категории отсутствует возможность поиска по цене/производителю
+   environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Нажать "Category" - "smartphones"
+    3. Нажать "Category" - пустую строку
+    4. Отметить "Apple", "samsung" в списке производителей
+    5. В поле поиска ввести "iPhone"
+  expected-result: |
+    Отобразятся только товары, подходящие запросу
+  actual-result: |
+    Отображены все товары. Фильтрация не выполнена. 
+
+- summary: |
+    Корзина не очищается при нажатии "Clear cart"
+   environment: |
+    Версия 116.0.5845.188 (Официальная сборка), (64 бит)
+    ОС Windows 10 Pro 19045.3448
+  steps-to-reproduce: |
+    1. Зайти на главную страницу https://products-store-git-v2bugfixes-hexlet-components.vercel.app/
+    2. Нажать "Add to cart" у товара iPhone 9 
+    3. Нажать "Cart"
+    4. Нажать "Clear Cart"
+    5. Нажать "Store"
+    6. Нажать "Cart"
+  expected-result: |
+    Корзина пуста.
+  actual-result: |
+    В корзине остался iPhone 9.     
