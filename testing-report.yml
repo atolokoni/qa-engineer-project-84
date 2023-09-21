@@ -67,5 +67,5 @@
   status: pass
 
       - summary: |
-    Проверка переходов по страницам "Shop" и "Cart".
+    Проверка переходов по страницам "Shop" и "Cart"
   status: pass
