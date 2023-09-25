@@ -2,70 +2,70 @@
     Проверка смены локализации сайта
   status: fail
 
-  - summary: |
+- summary: |
     Проверка сортировки товаров по категориям
   status: pass
 
-    - summary: |
+- summary: |
     Смена сортировки товаров по категориям
   status: pass
 
-    - summary: |
+- summary: |
     Проверка поиска товаров по названию
   status: pass
 
-    - summary: |
+- summary: |
     Проверка сброса фильтра по названию
   status: pass
 
-    - summary: |
+- summary: |
     Проверка поиска товаров по производителям
   status: pass
 
-    - summary: |
+- summary: |
     Проверка частичного сброса поиска товаров по производителям
   status: pass
 
-    - summary: |
+- summary: |
     Проверка поиска товаров не в наличии
   status: fail
 
-    - summary: |
+- summary: |
     Проверка поиска товаров по цене
   status: fail
 
-    - summary: |
+- summary: |
     Проверка очистка фильтра по цене
   status: pass
 
-    - summary: |
+- summary: |
     Проверка навигации по страницам товаров
   status: fail
 
-    - summary: |
+- summary: |
     Проверка редиректа на главную страницу Hexlet при нажатии на ссылку
   status: pass
 
-    - summary: |
+- summary: |
     Проверка добавления товаров в корзину
   status: pass
 
-      - summary: |
+- summary: |
     Проверка удаления товаров из корзины
   status: pass
 
-      - summary: |
+- summary: |
     Проверка оформления заказа
   status: pass
 
-      - summary: |
+- summary: |
     Проверка закрытия оформленного заказа
   status: fail
 
-      - summary: |
+- summary: |
     Проверка очищения корзины
   status: pass
 
-      - summary: |
+- summary: |
     Проверка переходов по страницам "Shop" и "Cart"
   status: pass
