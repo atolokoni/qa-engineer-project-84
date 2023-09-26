@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница Магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем кнопку "Language"
     - Нажимаем кнопку "Russian"
@@ -20,7 +20,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем кнопку "Category"
     - В выпадающем списке нажимаем "smartphones"
@@ -34,7 +34,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем кнопку "Category"
     - В выпадающем списке нажимаем "smartphones"
@@ -50,7 +50,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем на поле ввода "Search"
     - Вводим "iPho"
@@ -64,7 +64,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем на поле ввода "Search"
     - Вводим "iPho"
@@ -80,7 +80,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - В списке производителей выбираем "Apple", "Royal_Mirage" и "Dermive"
   expected-result: |
@@ -93,7 +93,7 @@
   prerequisites: |
     Открыта главная страница магазина. Выбран Русский язык. Выбраны производители "Apple", "Royal_Mirage" и "Dermive".Категория и цена не выбраны, поле поиска пустое, стоит галочка "в наличии"
   test-data: |
-    no data
+    Нет данных
   steps:
     - В списке производителей отменяем выбор "Dermive"
   expected-result: |
@@ -106,7 +106,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Отменяем выбор "В наличии"
   expected-result: |
@@ -119,7 +119,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - В первом поле ввода Price(From) вводим "900"
     - Во втором поле ввода Price(To) вводим "1200"
@@ -133,7 +133,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - В первом поле ввода Price(From) вводим "900"
     - Во втором поле ввода Price(To) вводим "1200"
@@ -149,7 +149,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем кнопку "Next"
     - Нажимаем кнопку "Next"
@@ -167,7 +167,7 @@
   prerequisites: |
     Открыта главная страница магазина.
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем на ссылку Hexlet
   expected-result: |
@@ -180,7 +180,7 @@
   prerequisites: |
     Открыта главная страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем "Add to cart" у товара iPhone9
     - Нажимаем "Add to cart" у товара iPhone9
@@ -197,7 +197,7 @@
   prerequisites: |
     Открыта страница корзины. В корзину добавлены iPhone9 в количестве 2 шт. и 1 шт. Plastic Table
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем "Delete" у товара iPhone9
   expected-result: |
@@ -210,7 +210,7 @@
   prerequisites: |
     Открыта страница корзины. В корзину добавлены iPhone9 в количестве 1 шт. и 1 шт. Plastic Table
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем "Checkout"
   expected-result: |
@@ -223,7 +223,7 @@
   prerequisites: |
     Открыта страница корзины. В корзину добавлены iPhone9 в количестве 1 шт. и 1 шт. Plastic Table. Форма "Checkout" открыта
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем "Close"
   expected-result: |
@@ -236,7 +236,7 @@
   prerequisites: |
     Открыта страница корзины. В корзину добавлены iPhone9 в количестве 1 шт. и 1 шт. Plastic Table
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем "Clear cart"
   expected-result: |
@@ -249,7 +249,7 @@
   prerequisites: |
     Открыта страница магазина
   test-data: |
-    no data
+    Нет данных
   steps:
     - Нажимаем "Cart"
     - Нажимаем "Shop"
