@@ -72,7 +72,6 @@ test-cases:
     Проверка переходов по страницам "Shop" и "Cart"
   status: pass
 
----
 bugreports:
   - summary: |
      Страница не полностью переводится на русский язык
