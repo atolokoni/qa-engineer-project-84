@@ -3,7 +3,7 @@
     Некорректное перемещение по страницам каталога
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. Нажать кнопку "вперед" 3 раза
     2. Нажать кнопку "назад" 3 раза
@@ -16,7 +16,7 @@
     Страница не полностью переводится на русский язык
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. Нажать "Язык", выбрать Русский
   expected-result: |
@@ -28,7 +28,7 @@
     При отмене выбора "в наличии" все товары пропадают
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. Снять отметку "In stock"
   expected-result: |
@@ -40,7 +40,7 @@
     При указании верхней границы цены учитывается цена до скидки
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. В поле "Price" - "To" ввести "500"
   expected-result: |
@@ -52,7 +52,7 @@
     При выборе категории нельзя вернуться к поиску без категории
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. Выбрать категорию "smartphones"
   expected-result: |
@@ -64,7 +64,7 @@
     Ошибка 500 при оформлении заказа
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. У товара "Handcraft Chinese style" нажать "Add to cart"
     2. Нажать "Cart"
@@ -80,7 +80,7 @@
     Не отобржается картинка флага у английской локализации
   environment: |
     Google Chrome    116.0.5845.188 (Официальная сборка) (64 бит)
-    ОС Windows 10 Pro 19045.3448
+    ОС Windows 19045.3448
   steps-to-reproduce: |
     1. Нажать "language"
   expected-result: |
